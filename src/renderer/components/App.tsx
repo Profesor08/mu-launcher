@@ -1,5 +1,4 @@
 import React from "react";
-import "mobx-react/batchingForReactDom";
 import styled, { createGlobalStyle } from "styled-components";
 import { AppBackground } from "./AppBackground";
 import { Logo } from "./Logo";

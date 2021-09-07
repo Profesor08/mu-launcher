@@ -18,6 +18,7 @@ export const createWindow = () => {
     resizable: false,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
     },
   });
 
@@ -74,7 +75,7 @@ export const createWindow = () => {
     try {
       return start(mainPath, mainWindow);
     } catch (err) {
-      return err.message;
+      return err;
     }
   });
 
