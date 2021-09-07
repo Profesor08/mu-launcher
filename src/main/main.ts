@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain } from "electron";
+import { app, BrowserWindow } from "electron";
 import squirrelStartup from "electron-squirrel-startup";
 import { createWindow } from "./app/Window";
 
@@ -9,8 +9,6 @@ if (squirrelStartup) {
 
 app.commandLine.appendArgument("enable-transparent-visuals");
 app.commandLine.appendArgument("disable-gpu");
-
-app.allowRendererProcessReuse = true;
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

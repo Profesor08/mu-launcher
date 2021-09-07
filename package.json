@@ -61,7 +61,8 @@
                   "name": "main_window"
                 }
               ]
-            }
+            },
+            "port": 4099
           }
         ]
       ]
@@ -84,7 +85,7 @@
     "@types/winreg": "^1.2.30",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.2",
-    "electron": "9.4.0",
+    "electron": "^14.0.0",
     "fork-ts-checker-webpack-plugin": "^3.1.1",
     "install": "^0.13.0",
     "node-loader": "^0.6.0",
@@ -102,6 +103,7 @@
     "lodash.throttle": "^4.1.1",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
+    "node-abi": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.0.3",
@@ -110,5 +112,8 @@
     "tree-kill": "^1.2.2",
     "tsparticles": "^1.12.11",
     "winreg": "^1.2.4"
+  },
+  "resolutions": {
+    "lgeiger/node-abi": "^2.18.0"
   }
 }
